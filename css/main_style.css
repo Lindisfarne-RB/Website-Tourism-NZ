@@ -1,0 +1,179 @@
+/*---- body styling the body tag ----*/
+body{
+	color: #bfd3e0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+	/*---- Set up site grid ----*/
+.wrapper{
+	display: grid;
+	grid-template-columns: 1fr 300px;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"header header"
+		"nav nav"
+		"slideshow slideshow"
+		"main aside"
+		"footer footer"; 
+	grid-gap: 4px;
+	}
+/*---- setting header up ----*/
+header {
+	grid-area: header;
+	background-color: #778392; /* dark green */
+	color: #fff;
+	padding: 0;
+	
+	height: 84px;
+	
+	}
+ /* border width for light areas */
+nav, main, aside {
+	border-style: solid;
+	border-width: 1px;
+
+}
+/*---- navbar ----*/
+nav {
+	grid-area: nav;
+	float: left;
+	background-color: #bad0de; /* pale green */
+	border-color: #ffffff; /* dark grey / lime */
+}
+
+/*---- styling main up ----*/
+main{
+	grid-area: main;
+	background-color: #455561; /* very light lime */
+	border-color: #d2d891; /* medium greyish green */
+}
+/*---- putting the thing on the side ----*/
+aside{
+	grid-area: aside;
+	background-color: #565B66; /* pale lime */
+	border-color: #acb259; /* olive green */
+}
+/*---- setting footer up----*/
+footer{
+	grid-area: footer;
+	color: #bad0de; /* pale lime */
+	background-color: #778392; /* dark green */
+	text-align: right;
+}
+
+	/*---- General formatting ----*/
+
+/*---- styling box ----*/
+.box{
+	padding: 20px;
+	border-radius: 10px;
+	}
+/*---- styling the header 1 tag ----*/
+h1 { 
+	font-family: 'Amatic SC', sans-serif;
+	font-size: 300%;
+	padding-left: 170px;
+	color: #EFF6FF;
+	position: relative;
+	top: 35%;
+	transform :translateY(-35%);
+	}
+/*---- styling the logo ----*/
+img.roundleft{
+	border-radius: 12px;
+	box-shadow: 1px 0px 10px #000;
+	float: left;
+	margin: auto;
+	display : block;
+	background-color: #eb8da4;
+	/* -- Transform to vertically center heading */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+
+
+	/*----Link Formatting----*/
+
+	/* Links in the main section & Sidebar */
+	a:link {color: #455561;}	/* dark green */
+	a:visited{color: #455561;}
+	a:hover {color: #455561;}	/* olive green */
+	
+
+
+	 /* Top Navigation */
+	nav a{text-decoration: none;}
+	nav a:link, nav a:visited {color: #455561;} /* dark green */
+	nav a:hover {color: #455561;} /* olive green */
+	
+
+/*-----Dropdown Down Menu-----*/
+	/* Style The Dropdown Button */
+.dropbtn {
+  	/* background-color: #4CAF50; */
+	color: #bad0de;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/*---- making the little arrow small ----*/
+.littlearrow {
+	font-size: 75%;
+}
+/*---- setting up the dropdown content ----*/
+.dropdown-content {
+	display: none;
+	position: absolute;
+  	background-color: #bad0de; /* Teal Green */
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #94abb9}	/* light teal */
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+/*---- setting the iframe up properly ----*/
+iframe {
+	width: 85%;
+	height: 754px;
+	margin: auto;
+	border: 0;
+}
+
+.islandPic{
+	padding : 10px;
+	border-radius: 25px;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {
+	background-color: #bcedcb;
+} */
+
+
